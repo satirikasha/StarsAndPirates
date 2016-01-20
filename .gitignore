@@ -4,5 +4,5 @@ Saved
 DerivedDataCache
 *.sln
 *.suo
-
+*.sdf
 *.opensdf
