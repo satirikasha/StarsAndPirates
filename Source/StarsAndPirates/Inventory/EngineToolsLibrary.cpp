@@ -12,3 +12,8 @@ int32 UEngineToolsLibrary::CountInvalid(TArray<AActor*> TargetArray)
 {
 	return TargetArray.FilterByPredicate([](AActor* a) { return (!a || a->IsPendingKill() || a->IsPendingKillPending()); }).Num();
 }
+
+TArray<AActor*> UEngineToolsLibrary::GetChildren(AActor* Actor)
+{
+	return Actor->Children;
+}

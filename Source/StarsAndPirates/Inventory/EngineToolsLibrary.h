@@ -17,4 +17,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Utilities|Array")
 		static int32 CountInvalid(TArray<AActor*> TargetArray);
+
+	UFUNCTION(BlueprintPure, Category = "Utilities")
+		static TArray<AActor*> GetChildren(AActor* Actor);
 };
